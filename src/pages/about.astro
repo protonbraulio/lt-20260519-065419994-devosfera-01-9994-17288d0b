@@ -1,0 +1,60 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import Header from "@/components/Header.astro";
+import Footer from "@/components/Footer.astro";
+import Breadcrumb from "@/components/Breadcrumb.astro";
+import { SITE } from "@/config";
+
+const pageTitle = "About the Publication";
+const pageDescription = "How Devosfera Load Test 01 20260519-065419994 is structured, what it covers, and how it keeps content current.";
+---
+
+<Layout title={`${pageTitle} | ${SITE.title}`} description={pageDescription}>
+  <Header />
+  <Breadcrumb />
+  <main id="main-content" class="app-layout pb-16">
+    <article class="app-prose mx-auto max-w-3xl">
+      <header class="mb-10">
+        <p class="font-cartograph text-sm uppercase tracking-wide text-accent">
+          Site information
+        </p>
+        <h1>{pageTitle}</h1>
+        <p class="text-foreground/70">{pageDescription}</p>
+      </header>
+      <section class="mb-10">
+        <h2>What this publication covers</h2>
+        <p>Devosfera Load Test 01 20260519-065419994 exists to publish articles, archives, editorial pages, author information, and supporting publication updates.</p>
+        <p>It is aimed at readers, subscribers, contributors, and visitors reviewing published material.</p>
+      </section>
+
+      <section class="mb-10">
+        <h2>Editorial standards and selection</h2>
+        <p>We prefer clear, practical language and content that helps readers understand the site, its topic, and the surrounding context.</p>
+        <p>New pages, revisions, and updates are chosen to keep the site useful even when the brand, team, or business details are still evolving.</p>
+      </section>
+
+      <section class="mb-10">
+        <h2>Publishing scope and ongoing updates</h2>
+        <p>Devosfera Load Test 01 20260519-065419994 is expected to publish articles, archives, editorial pages, author information, and supporting publication updates.</p>
+        <p>The site can cover publish editorial material, organize archives, and support ongoing content discovery.</p>
+        <p>That usually includes articles, archives, author or publication pages, and ongoing editorial updates.</p>
+      </section>
+
+      <section class="mb-10">
+        <h2>How updates are handled</h2>
+        <p>If a page becomes outdated, it can be revised or replaced without changing the underlying purpose of the site.</p>
+        <p>Readers should expect the content to evolve as the publication matures, especially once actual brand details, authors, or contact routes are added.</p>
+      </section>
+
+      <section class="mb-10">
+        <h2>Where this site sits in the niche</h2>
+        <p>The publication should feel like a real editorial destination, with room for articles, archives, and recurring content sections.</p>
+      </section>
+
+      <aside class="rounded-2xl border border-border/30 bg-muted/20 p-5 text-sm text-foreground/70">
+        <p>This starter page is generated as a baseline and should be reviewed and customized before being relied on as production legal or business copy.</p>
+      </aside>
+    </article>
+  </main>
+  <Footer />
+</Layout>

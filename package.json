@@ -1,0 +1,32 @@
+{
+  "name": "devosfera-load-test-01-20260519-065419994",
+  "type": "module",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build && pagefind --site dist",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/mdx": "^5.0.0",
+    "@astrojs/rss": "^4.0.17",
+    "@astrojs/sitemap": "^3.7.1",
+    "@pagefind/default-ui": "^1.4.0",
+    "@tailwindcss/typography": "^0.5.19",
+    "@tailwindcss/vite": "^4.1.18",
+    "astro": "^6.0.3",
+    "dayjs": "^1.11.19",
+    "lodash.kebabcase": "^4.1.1",
+    "pagefind": "^1.4.0",
+    "remark-collapse": "^0.1.2",
+    "remark-toc": "^9.0.0",
+    "slugify": "^1.6.6",
+    "tailwindcss": "^4.1.18"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.3"
+  }
+}

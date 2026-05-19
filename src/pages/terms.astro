@@ -1,0 +1,78 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import Header from "@/components/Header.astro";
+import Footer from "@/components/Footer.astro";
+import Breadcrumb from "@/components/Breadcrumb.astro";
+import { SITE } from "@/config";
+
+const pageTitle = "Terms of Use";
+const pageDescription = "Baseline terms for a publishing site that needs clear use rules, IP language, and liability limits.";
+---
+
+<Layout title={`${pageTitle} | ${SITE.title}`} description={pageDescription}>
+  <Header />
+  <Breadcrumb />
+  <main id="main-content" class="app-layout pb-16">
+    <article class="app-prose mx-auto max-w-3xl">
+      <header class="mb-10">
+        <p class="font-cartograph text-sm uppercase tracking-wide text-accent">
+          Site information
+        </p>
+        <h1>{pageTitle}</h1>
+        <p class="text-foreground/70">{pageDescription}</p>
+      </header>
+      <section class="mb-10">
+        <h2>When the terms apply</h2>
+        <p>By using Devosfera Load Test 01 20260519-065419994, visitors agree to these terms as they are published from time to time.</p>
+        <p>If a visitor does not agree with the terms, the site should not present itself as intended for continued use.</p>
+      </section>
+
+      <section class="mb-10">
+        <h2>How the website may be used</h2>
+        <p>The website may be used to read published material, review public information, and engage with the site in a normal and lawful way.</p>
+        <p>Readers should avoid automated scraping, disruption, abusive use, or any activity that interferes with the site or its audience.</p>
+      </section>
+
+      <section class="mb-10">
+        <h2>Ownership of the site and its materials</h2>
+        <p>Text, layout, and site-specific assets belong to the site owner or the relevant rights holder unless the page says otherwise.</p>
+        <p>Readers should not assume that a public page grants any licence to reuse the material outside ordinary viewing or sharing.</p>
+      </section>
+
+      <section class="mb-10">
+        <h2>How reliable the published information is</h2>
+        <p>The site may change, move, or disappear without notice, and published information may not always be complete or current.</p>
+        <p>Visitors should treat the site as a public information source rather than a guaranteed record of every fact or event.</p>
+      </section>
+
+      <section class="mb-10">
+        <h2>External links and third-party services</h2>
+        <p>External links are provided for convenience, and the site does not control the content, behaviour, or policies of external providers.</p>
+        <p>If the site later embeds video, maps, analytics, or other hosted tools, those services can have their own terms and privacy handling.</p>
+      </section>
+
+      <section class="mb-10">
+        <h2>Disclaimers and liability</h2>
+        <p>The site makes no warranty that every page is complete, current, or suitable for any specific purpose.</p>
+        <p>Visitors should make their own judgment before relying on published material, especially where the content touches regulated, financial, or time-sensitive topics.</p>
+      </section>
+
+      <section class="mb-10">
+        <h2>Updates and revised terms</h2>
+        <p>These terms may be updated when the site changes, but the published version should remain the one that governs current use.</p>
+        <p>Material changes should be reflected before a new feature, content type, or workflow goes live.</p>
+      </section>
+
+      <section class="mb-10">
+        <h2>Which law applies</h2>
+        <p>If a governing law clause is needed later, it should use a real jurisdiction and not a placeholder like [JURISDICTION] unless the site has been finalized for that jurisdiction.</p>
+        <p>Until then, this section should remain a generic placeholder for the legal review process.</p>
+      </section>
+
+      <aside class="rounded-2xl border border-border/30 bg-muted/20 p-5 text-sm text-foreground/70">
+        <p>This starter page is generated as a baseline and should be reviewed and customized before being relied on as production legal or business copy.</p>
+      </aside>
+    </article>
+  </main>
+  <Footer />
+</Layout>

@@ -1,0 +1,54 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import Header from "@/components/Header.astro";
+import Footer from "@/components/Footer.astro";
+import Breadcrumb from "@/components/Breadcrumb.astro";
+import { SITE } from "@/config";
+
+const pageTitle = "Disclaimer for Devosfera Load Test 01 20260519-065419994";
+const pageDescription = "A niche-aware disclaimer for a brandless publishing site with no real-world business details yet.";
+---
+
+<Layout title={`${pageTitle} | ${SITE.title}`} description={pageDescription}>
+  <Header />
+  <Breadcrumb />
+  <main id="main-content" class="app-layout pb-16">
+    <article class="app-prose mx-auto max-w-3xl">
+      <header class="mb-10">
+        <p class="font-cartograph text-sm uppercase tracking-wide text-accent">
+          Site information
+        </p>
+        <h1>{pageTitle}</h1>
+        <p class="text-foreground/70">{pageDescription}</p>
+      </header>
+      <section class="mb-10">
+        <h2>This site does not replace professional advice</h2>
+        <p>The material published on Devosfera Load Test 01 20260519-065419994 is provided for general informational purposes only.</p>
+        <p>Readers should not treat the content as a substitute for advice from a qualified professional, especially where the topic is regulated or time-sensitive.</p>
+      </section>
+
+      <section class="mb-10">
+        <h2>Reader responsibility and reliance</h2>
+        <p>Readers should use the site as a starting point for further research rather than as a final source of truth.</p>
+        <p>No page on the site should be treated as a guarantee, promise, or professional opinion unless a later page states that explicitly.</p>
+      </section>
+
+      <section class="mb-10">
+        <h2>Editorial material may change without warning</h2>
+        <p>This publication can include opinions, summaries, references, and editorial material that may change over time.</p>
+        <p>No outcome, result, or specific business decision should be assumed from the published material alone.</p>
+      </section>
+
+      <section class="mb-10">
+        <h2>How disclaimer wording may change</h2>
+        <p>This notice should be updated when the site adds real operational details, regulated services, or professional relationships.</p>
+        <p>The strongest wording is kept for the current publishing context.</p>
+      </section>
+
+      <aside class="rounded-2xl border border-border/30 bg-muted/20 p-5 text-sm text-foreground/70">
+        <p>This starter page is generated as a baseline and should be reviewed and customized before being relied on as production legal or business copy.</p>
+      </aside>
+    </article>
+  </main>
+  <Footer />
+</Layout>
