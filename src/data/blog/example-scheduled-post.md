@@ -2,8 +2,8 @@
 title: "Example scheduled post"
 slug: "example-scheduled-post"
 description: "Example post prepared for scheduled publishing."
-status: scheduled
-draft: true
+status: "published"
+draft: false
 publishAt: "2026-05-20T09:00:00.000Z"
 pubDatetime: "2026-05-20T09:00:00.000Z"
 topicCluster: "scheduled publishing"
@@ -13,8 +13,8 @@ license: cc-by-nc-sa-4-0
 image:
   src: "https://example.com/images/placeholder-card.svg"
   alt: "Scheduled publishing placeholder image."
+publishedAt: "2026-05-20T10:37:24.201Z"
 ---
-
 This example shows the frontmatter contract for scheduled publishing.
 
 The GitHub Actions scheduler will publish it when `publishAt` is due by changing `status` to `published`, setting `draft: false`, and adding `publishedAt`.
